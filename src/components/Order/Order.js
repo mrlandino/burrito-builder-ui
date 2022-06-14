@@ -7,7 +7,7 @@ const Order = ({name, ingredients}) => {
         <h3>{name}</h3>
         <ul className="ingredient-list">
           {ingredients.map(ingredient => {
-            return <li>{ingredient}</li>
+            return <li key={ingredient}>{ingredient}</li>
           })}
         </ul>
       </div>
